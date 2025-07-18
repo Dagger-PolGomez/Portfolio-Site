@@ -1,69 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Pol Gomez - Game Developer</title>
+    <title>Pol Gomez - Game Developer & Tool Programmer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #f0f0f0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: #f0f0f0;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1, h2 {
-            color: #00ffc8;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #aaa;
-        }
-    </style>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Pol Gomez</h1>
-    <p>Game Developer & Tool Programmer</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="tools.html">Tools</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <h1>Pol Gomez</h1>
+        <p>Game Developer & Tool Programmer</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<main>
-    <h2>Welcome</h2>
-    <p>This is a basic version of my professional portfolio. Here you'll find my projects, developer tools, and contact information.</p>
-</main>
+    </header>
 
-<footer>
-    &copy; 2025 Pol Gomez. All rights reserved.
-</footer>
+    <section class="intro">
+        <h1>Building Games & Tools in Unity</h1>
+        <p>I specialize in programming gameplay systems and creating development tools using Unity. Explore my projects
+            and see how I turn code into functional, optimized solutions.</p>
+
+        <div class="button-group">
+            <a href="projects.html">View Projects</a>
+            <a href="tools.html">Developer Tools</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I’m Pol Gomez, a programmer with over 5 years of coding experience, focused on game development and
+                    tool programming in Unity. Currently completing my Game Programming & Design degree, I specialize in
+                    gameplay systems and production tools that optimize real-world workflows.</p>
+
+                <p>My work ranges from full game projects to editor tools designed for other developers. I’m fluent in
+                    English and Spanish, with additional skills in Catalan and Italian.</p>
+
+                <p>I'm open to internships, freelance work, and collaboration opportunities.</p>
+
+                <p>In my free time, I will always be developing new tools for my self and to publish, in addition to any
+                    other personal project/games that I might be working on.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="media/webp/PolPFP.webp" alt="Pol Gomez Portrait">
+            </div>
+        </div>
+    </section>
+    <!-- GAME PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+        <h2>Game Projects</h2>
+
+        <!-- Featured Project -->
+        <div class="featured-project">
+            <img src="media/webp/game1.webp" alt="Team Project Screenshot">
+            <div class="project-text">
+                <h3>Team Project – Full Game</h3>
+                <p>Developed a complete game in a 5-person team. Focused on gameplay programming, UI systems, and bug
+                    fixing using Unity and C#. This project represents my most complete and polished work to date.</p>
+                <div class="learn-more">
+                    <a href="/GameProjects/TeamProject.html">
+                        <span class="text">Learn More</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smaller Projects Grid -->
+        <div class="projects-grid-row">
+            <div class="project-card small-project">
+                <img src="media/webp/game2.webp" alt="Minor Game 1 Screenshot">
+                <h3>Minor Game Project 1</h3>
+                <p>Solo prototype project. Included basic combat and exploration systems using Unity and C#.</p>
+                <div class="learn-more">
+                    <a href="/GameProjects/MinorGame1.html">
+                        <span class="text">Learn More</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card small-project">
+                <img src="media/webp/game3.webp" alt="Roguelike Screenshot">
+                <h3>Roguelike (In Development)</h3>
+                <p>Personal project: a procedural roguelike game using custom map generation and modular gameplay
+                    architecture.</p>
+                <div class="learn-more">
+                    <a href="/GameProjects/RoguelikeProject.html">
+                        <span class="text">Learn More</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DEVELOPER TOOLS SECTION -->
+
+    <section id="tools" class="tools-section">
+        <h2>Developer Tools</h2>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <img src="media/webp/tool1.webp" alt="Inventory System Screenshot">
+                <h3>Inventory Management System</h3>
+                <p>A modular inventory system for Unity, featuring editor integration and customizable item databases.
+                </p>
+                <div class="learn-more">
+                    <a href="/DeveloperTools/InventorySystem.html">
+                        <span class="text">See Full Tool</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <img src="media/webp/tool2.webp" alt="Map Generator Screenshot">
+                <h3>Roguelike Map Generation Tool</h3>
+                <p>A procedural node-based map generation system for 2D roguelike games. Includes adjustable algorithms
+                    and editor preview.</p>
+                <div class="learn-more">
+                    <a href="/DeveloperTools/MapGenerator.html">
+                        <span class="text">See Full Tool</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <img src="media/webp/tool3.webp" alt="Cleanup Tool Screenshot">
+                <h3>Project Cleanup Tool</h3>
+                <p>A Unity editor extension that automatically detects and removes unused assets, helping streamline and
+                    optimize project builds.</p>
+                <div class="learn-more">
+                    <a href="/DeveloperTools/ProjectCleanupTool.html">
+                        <span class="text">See Full Tool</span>
+                        <span class="arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+
+        <p>
+            📧 <strong>Email:</strong> <a href="mailto:polgomez624@gmail.com">polgomez624@gmail.com</a><br>
+            💻 <strong>GitHub:</strong> <a href="https://github.com/DagGP" target="_blank">github.com/DagGP</a><br>
+            🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pol-gomez-353461334/"
+                target="_blank">LinkedIn Profile</a>
+        </p>
+
+        <p>Or use the contact form below:</p>
+
+        <form id="contact-form" action="https://formspree.io/f/xyzpzope" method="POST">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="_replyto" required><br><br>
+
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="form-status" style="display:none; color: var(--accent-green); font-weight: bold; margin-top: 20px;">
+            Your message has been sent!
+        </p>
+
+    </section>
+
+
+    <footer>
+        &copy; 2025 Pol Gomez. All rights reserved.
+    </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                form.reset();
+                status.style.display = 'block';
+            } else {
+                status.textContent = "Oops! Something went wrong.";
+                status.style.color = 'red';
+                status.style.display = 'block';
+            }
+        });
+    </script>
 
 </body>
+
 </html>
