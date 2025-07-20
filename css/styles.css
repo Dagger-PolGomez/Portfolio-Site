@@ -101,6 +101,7 @@
      background-color: #0f1f3a;
      padding: 80px 20px;
      color: var(--text-light);
+     animation: fadeInUp 1s ease forwards 0.5s;
  }
 
  .about-container {
