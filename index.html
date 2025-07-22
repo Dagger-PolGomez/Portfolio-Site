@@ -17,13 +17,7 @@
     <header>
         <h1>Pol Gomez</h1>
         <p>Game Developer & Tool Programmer</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#tools">Tools</a>
-            <a href="#contact">Contact</a>
-        </nav>
+
 
     </header>
 
@@ -33,6 +27,7 @@
             and see how I turn code into functional, optimized solutions.</p>
 
         <div class="button-group">
+            <a href="#about">About me</a>
             <a href="#projects">View Projects</a>
             <a href="#tools">Developer Tools</a>
             <a href="#contact">Contact Me</a>
@@ -57,7 +52,7 @@
             </div>
 
             <div class="about-image">
-                <img src="media/webp/PolPFP.webp" alt="Pol Gomez Portrait">
+                <img src="media/png/PolGomez.jpg" alt="Pol Gomez Portrait">
             </div>
         </div>
     </section>
@@ -68,7 +63,7 @@
 
         <!-- Featured Project -->
         <div class="featured-project">
-            <img src="media/webp/game1.webp" alt="Team Project Screenshot">
+            <img src="media/Gif/KE_Banner.gif" alt="Team Project Screenshot">
             <div class="project-text">
                 <h3>Team Project – Full Game</h3>
                 <p>Developed a complete game in a 5-person team. Focused on gameplay programming, UI systems, and bug
@@ -85,7 +80,7 @@
         <!-- Smaller Projects Grid -->
         <div class="projects-grid-row">
             <div class="project-card small-project">
-                <img src="media/webp/game2.webp" alt="Minor Game 1 Screenshot">
+                <img src="media/png/MobiesEscape.png" alt="Minor Game 1 Screenshot">
                 <h3>Minor Game Project 1</h3>
                 <p>Solo prototype project. Included basic combat and exploration systems using Unity and C#.</p>
                 <div class="learn-more">
@@ -97,12 +92,12 @@
             </div>
 
             <div class="project-card small-project">
-                <img src="media/webp/game3.webp" alt="Roguelike Screenshot">
+                <img src="media/png/AprenticeArcana.png" alt="Roguelike Screenshot">
                 <h3>Roguelike (In Development)</h3>
                 <p>Personal project: a procedural roguelike game using custom map generation and modular gameplay
                     architecture.</p>
                 <div class="learn-more">
-                    <a href="GameProjects/RoguelikeProject.html">
+                    <a href="GameProjects/RougelikeProject.html">
                         <span class="text">Learn More</span>
                         <span class="arrow"> →</span>
                     </a>
@@ -119,7 +114,6 @@
 
         <div class="tools-grid">
             <div class="tool-card">
-                <img src="media/webp/tool1.webp" alt="Inventory System Screenshot">
                 <h3>Inventory Management System</h3>
                 <p>A modular inventory system for Unity, featuring editor integration and customizable item databases.
                 </p>
@@ -132,7 +126,6 @@
             </div>
 
             <div class="tool-card">
-                <img src="media/webp/tool2.webp" alt="Map Generator Screenshot">
                 <h3>Roguelike Map Generation Tool</h3>
                 <p>A procedural node-based map generation system for 2D roguelike games. Includes adjustable algorithms
                     and editor preview.</p>
@@ -145,7 +138,6 @@
             </div>
 
             <div class="tool-card">
-                <img src="media/webp/tool3.webp" alt="Cleanup Tool Screenshot">
                 <h3>Project Cleanup Tool</h3>
                 <p>A Unity editor extension that automatically detects and removes unused assets, helping streamline and
                     optimize project builds.</p>
@@ -254,7 +246,7 @@
                     el.classList.remove('fade-in-up', 'fade-in-down', 'visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.2 });
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
