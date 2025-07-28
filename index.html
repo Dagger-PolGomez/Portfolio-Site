@@ -114,6 +114,7 @@
 
         <div class="tools-grid">
             <div class="tool-card">
+                <img src="media/png/InventoryImage.png" alt="Inventory Management System Image">
                 <h3>Inventory Management System</h3>
                 <p>A modular inventory system for Unity, featuring editor integration and customizable item databases.
                 </p>
@@ -126,6 +127,7 @@
             </div>
 
             <div class="tool-card">
+                <img src="media/png/MapGeneratorImage.png" alt="Rougelike Map Generator Image">
                 <h3>Roguelike Map Generation Tool</h3>
                 <p>A procedural node-based map generation system for 2D roguelike games. Includes adjustable algorithms
                     and editor preview.</p>
@@ -138,7 +140,8 @@
             </div>
 
             <div class="tool-card">
-                <h3>Project Cleanup Tool</h3>
+                <img src="media/png/AssetCleanerImage.png" alt="Asset Cleaup Image">
+                <h3>Asset Cleanup Tool</h3>
                 <p>A Unity editor extension that automatically detects and removes unused assets, helping streamline and
                     optimize project builds.</p>
                 <div class="learn-more">
@@ -246,7 +249,7 @@
                     el.classList.remove('fade-in-up', 'fade-in-down', 'visible');
                 }
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.03 });
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
