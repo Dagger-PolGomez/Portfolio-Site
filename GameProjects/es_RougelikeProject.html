@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprentice Arcana - Pol Gomez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body>
+
+    <!-- Selector de idioma -->
+    <div class="lang-select">
+        <select id="language-switcher">
+            <option value="en">English</option>
+            <option value="es" selected>Español</option>
+        </select>
+    </div>
+
+    <header>
+        <h1>Aprentice Arcana (Prototipo)</h1>
+        <p>Un proyecto individual de Pol Gomez</p>
+        <nav>
+            <a href="../index_es.html#projects">← Volver a Proyectos</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <p><strong>Aprentice Arcana</strong> es un prototipo desarrollado en solitario que combina <strong>mecánicas clásicas de Tetris</strong> con <strong>progresión tipo roguelike</strong>. Diseñado completamente por mí, el juego busca reinventar mecánicas antiguas en una estructura moderna, inspirado por algunos de mis juegos indie favoritos.</p>
+
+        <img src="../media/png/AprenticeArcana.png" alt="Captura de Aprentice Arcana"
+            style="max-width: 100%; margin: 40px 0; border: 2px solid var(--accent-green); border-radius: 10px;">
+
+        <h2>Características principales (fase prototipo)</h2>
+        <ul style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
+            <li>Fusión única entre mecánicas de bloques que caen y progresión roguelike.</li>
+            <li>Dificultad que escala proceduralmente y rutas de mejora modulares.</li>
+            <li>Todo el arte, código y diseño creado en solitario.</li>
+            <li>Prototipo temprano que representa un diseño indie experimental.</li>
+        </ul>
+
+        <h2>Mi rol</h2>
+        <p>Aprentice Arcana es un proyecto completamente personal. Me encargué de:</p>
+        <ul style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
+            <li>Diseño de juego y creación de mecánicas base.</li>
+            <li>Programación del bucle principal y sistemas procedurales en Unity.</li>
+            <li>Creación de todos los assets de arte y UI de prueba.</li>
+            <li>Iteración sobre ritmo de juego y retos de progresión roguelike.</li>
+            <li>Planificación del alcance del desarrollo y resolución de desafíos típicos del desarrollo indie.</li>
+        </ul>
+
+        <h2>Estado de desarrollo</h2>
+        <p>El prototipo está disponible públicamente. He retomado el desarrollo con la intención de refinar mecánicas, repensar la dirección artística y corregir fallos de diseño tempranos para convertir este concepto en un juego indie completo y pulido.</p>
+
+        <h2>Capturas de pantalla</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0;">
+            <img src="../media/png/AA_Screenshot1.png" alt="Captura de Aprentice Arcana 1"
+                style="max-width: 300px; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <img src="../media/png/AA_Screenshot2.png" alt="Captura de Aprentice Arcana 2"
+                style="max-width: 300px; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <img src="../media/png/AA_Screenshot3.png" alt="Captura de Aprentice Arcana 3"
+                style="max-width: 620px; border: 2px solid var(--accent-green); border-radius: 10px;">
+        </div>
+
+        <h2>Jugar / Descargar</h2>
+        <p><a href="https://daggertv.itch.io/aprenticearcana" target="_blank"
+                style="color: var(--accent-green); font-weight: bold;">Jugar al prototipo de Aprentice Arcana en Itch.io →</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Pol Gomez. Todos los derechos reservados.
+    </footer>
+
+    <!-- Script de cambio de idioma -->
+    <script>
+        document.getElementById('language-switcher').addEventListener('change', function () {
+            const lang = this.value;
+            const currentPage = window.location.pathname;
+
+            if (lang === 'en') {
+                window.location.href = currentPage.replace('es_RougelikeProject', 'RougelikeProject');
+            } else {
+                window.location.href = currentPage.replace('RougelikeProject', 'es_RougelikeProject');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

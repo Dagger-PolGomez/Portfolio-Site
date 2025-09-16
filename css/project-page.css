@@ -84,3 +84,27 @@ footer {
     color: var(--text-muted);
     background-color: var(--primary-blue);
 }
+
+
+.lang-select {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-select select {
+    background-color: var(--primary-blue);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang-select img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

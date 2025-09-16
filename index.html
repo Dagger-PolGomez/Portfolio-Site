@@ -7,24 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+    <div class="lang-select">
+        <select id="language-switcher">
+            <option value="en" selected>English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
     <header>
         <h1>Pol Gomez</h1>
         <p>Game Developer & Tool Programmer</p>
-
-
     </header>
 
     <section class="intro animate-on-scroll">
         <h1>Building Games & Tools in Unity</h1>
-        <p>I specialize in programming gameplay systems and creating development tools using Unity. Explore my projects
-            and see how I turn code into functional, optimized solutions.</p>
+        <p>I specialize in programming gameplay systems and creating development tools using Unity. Explore my projects and see how I turn code into functional, optimized solutions.</p>
 
         <div class="button-group">
             <a href="#about">About me</a>
@@ -39,17 +41,13 @@
         <div class="about-container">
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>I’m Pol Gomez, a programmer with over 5 years of coding experience, focused on game development and
-                    tool programming in Unity. Currently completing my Game Programming & Design degree, I specialize in
-                    gameplay systems and production tools that optimize real-world workflows.</p>
+                <p>I’m Pol Gomez, a programmer with over 5 years of coding experience, focused on game development and tool programming in Unity. Currently completing my Game Programming & Design degree, I specialize in gameplay systems and production tools that optimize real-world workflows.</p>
 
-                <p>My work ranges from full game projects to editor tools designed for other developers. I’m fluent in
-                    English and Spanish, with additional skills in Catalan and Italian.</p>
+                <p>My work ranges from full game projects to editor tools designed for other developers. I’m fluent in English and Spanish, with additional skills in Catalan and Italian.</p>
 
                 <p>I'm open to internships, freelance work, and collaboration opportunities.</p>
 
-                <p>In my free time, I will always be developing new tools for my self and to publish, in addition to any
-                    other personal project/games that I might be working on.</p>
+                <p>In my free time, I will always be developing new tools for myself and to publish, in addition to any other personal project/games that I might be working on.</p>
             </div>
 
             <div class="about-image">
@@ -57,18 +55,15 @@
             </div>
         </div>
     </section>
-    <!-- GAME PROJECTS SECTION -->
 
     <section id="projects" class="projects-section animate-on-scroll">
         <h2>Game Projects</h2>
 
-        <!-- Featured Project -->
         <div class="featured-project">
-            <img src="media/Gif/KE_Banner.gif" alt="Team Project Screenshot">
+            <img src="media/Gif/KE_Banner.gif" alt="Kill.exe Screenshot">
             <div class="project-text">
                 <h3>Team Project – Full Game</h3>
-                <p>Developed a complete game in a 5-person team. Focused on gameplay programming, UI systems, and bug
-                    fixing using Unity and C#. This project represents my most complete and polished work to date.</p>
+                <p>Developed a complete game in a 5-person team. Focused on gameplay programming, UI systems, and bug fixing using Unity and C#. This project represents my most complete and polished work to date.</p>
                 <div class="learn-more">
                     <a href="GameProjects/TeamProject.html">
                         <span class="text">Learn More</span>
@@ -78,10 +73,9 @@
             </div>
         </div>
 
-        <!-- Smaller Projects Grid -->
         <div class="projects-grid-row">
             <div class="project-card small-project">
-                <img src="media/png/MobiesEscape.png" alt="Minor Game 1 Screenshot">
+                <img src="media/png/MobiesEscape.png" alt="Mobie's Escape Screenshot">
                 <h3>Minor Game Project 1</h3>
                 <p>Solo prototype project. Included basic combat and exploration systems using Unity and C#.</p>
                 <div class="learn-more">
@@ -93,10 +87,9 @@
             </div>
 
             <div class="project-card small-project">
-                <img src="media/png/AprenticeArcana.png" alt="Roguelike Screenshot">
+                <img src="media/png/AprenticeArcana.png" alt="Aprentice Arcana Screenshot">
                 <h3>Roguelike (In Development)</h3>
-                <p>Personal project: a procedural roguelike game using custom map generation and modular gameplay
-                    architecture.</p>
+                <p>Personal project: a procedural roguelike game using custom map generation and modular gameplay architecture.</p>
                 <div class="learn-more">
                     <a href="GameProjects/RougelikeProject.html">
                         <span class="text">Learn More</span>
@@ -107,18 +100,14 @@
         </div>
     </section>
 
-
-    <!-- DEVELOPER TOOLS SECTION -->
-
     <section id="tools" class="tools-section animate-on-scroll">
         <h2>Developer Tools</h2>
 
         <div class="tools-grid">
             <div class="tool-card">
-                <img src="media/png/InventoryImage.png" alt="Inventory Management System Image">
+                <img src="media/png/InventoryImage.png" alt="Inventory System">
                 <h3>Inventory Management System</h3>
-                <p>A modular inventory system for Unity, featuring editor integration and customizable item databases.
-                </p>
+                <p>A modular inventory system for Unity, featuring editor integration and customizable item databases.</p>
                 <div class="learn-more">
                     <a href="DeveloperTools/InventorySystem.html">
                         <span class="text">See Full Tool</span>
@@ -128,10 +117,9 @@
             </div>
 
             <div class="tool-card">
-                <img src="media/png/MapGeneratorImage.png" alt="Rougelike Map Generator Image">
+                <img src="media/png/MapGeneratorImage.png" alt="Map Generator">
                 <h3>Roguelike Map Generation Tool</h3>
-                <p>A procedural node-based map generation system for 2D roguelike games. Includes adjustable algorithms
-                    and editor preview.</p>
+                <p>A procedural node-based map generation system for 2D roguelike games. Includes adjustable algorithms and editor preview.</p>
                 <div class="learn-more">
                     <a href="DeveloperTools/MapGenerator.html">
                         <span class="text">See Full Tool</span>
@@ -141,10 +129,9 @@
             </div>
 
             <div class="tool-card">
-                <img src="media/png/AssetCleanerImage.png" alt="Asset Cleaup Image">
+                <img src="media/png/AssetCleanerImage.png" alt="Asset Cleanup">
                 <h3>Asset Cleanup Tool</h3>
-                <p>A Unity editor extension that automatically detects and removes unused assets, helping streamline and
-                    optimize project builds.</p>
+                <p>A Unity editor extension that automatically detects and removes unused assets, helping streamline and optimize project builds.</p>
                 <div class="learn-more">
                     <a href="DeveloperTools/ProjectCleanupTool.html">
                         <span class="text">See Full Tool</span>
@@ -161,8 +148,7 @@
         <p>
             📧 <strong>Email:</strong> <a href="mailto:polgomez624@gmail.com">polgomez624@gmail.com</a><br>
             💻 <strong>GitHub:</strong> <a href="https://github.com/Dagger-PolGomez" target="_blank">github.com/DagGP</a><br>
-            🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pol-gomez-353461334/"
-                target="_blank">LinkedIn Profile</a>
+            🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pol-gomez-353461334/" target="_blank">LinkedIn Profile</a>
         </p>
 
         <p>Or use the contact form below:</p>
@@ -183,17 +169,14 @@
         <p id="form-status" style="display:none; color: var(--accent-green); font-weight: bold; margin-top: 20px;">
             Your message has been sent!
         </p>
-
     </section>
-
 
     <footer>
         &copy; 2025 Pol Gomez. All rights reserved.
     </footer>
 
     <script>
-
-        /*CONTACT FORM*/
+        // CONTACT FORM
         const form = document.getElementById('contact-form');
         const status = document.getElementById('form-status');
 
@@ -221,9 +204,8 @@
         });
     </script>
 
-
     <script>
-        /* Animation Script */
+        // ANIMATION
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 const el = entry.target;
@@ -232,21 +214,16 @@
                     const elementTop = entry.boundingClientRect.top;
                     const elementCenter = window.innerHeight / 2;
 
-                    // Always reset first
                     el.classList.remove('fade-in-up', 'fade-in-down', 'visible');
 
                     if (elementTop > elementCenter) {
-                        // Entering from below, fade upwards
                         el.classList.add('fade-in-up');
                     } else {
-                        // Entering from above, fade downwards
                         el.classList.add('fade-in-down');
                     }
 
                     el.classList.add('visible');
-
                 } else {
-                    // Reset once element exits viewport to allow retrigger
                     el.classList.remove('fade-in-up', 'fade-in-down', 'visible');
                 }
             });
@@ -256,6 +233,25 @@
             observer.observe(el);
         });
     </script>
+    <script>
+    // Only run auto redirect if no manual language preference set
+    if (!sessionStorage.getItem('langSelected')) {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('es')) {
+        window.location.href = 'index_es.html';
+      }
+    }
+
+    document.getElementById('language-switcher').addEventListener('change', function () {
+      const lang = this.value;
+      sessionStorage.setItem('langSelected', lang);
+      if (lang === 'es') {
+        window.location.href = 'index_es.html';
+      } else {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
 
 
 </body>

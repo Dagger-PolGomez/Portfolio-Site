@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobie's Escape - Pol Gomez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body>
+
+    <!-- Language Dropdown -->
+    <div class="lang-select">
+        <select id="language-switcher">
+            <option value="en">English</option>
+            <option value="es" selected>Español</option>
+        </select>
+    </div>
+
+    <header>
+        <h1>Mobie's Escape</h1>
+        <p>Un proyecto de videojuego por Pol Gomez</p>
+        <nav>
+            <a href="../index_es.html#projects">← Volver a Proyectos</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <p><strong>Mobie's Escape</strong> es un juego de plataformas y puzles en 2D desarrollado como proyecto universitario en equipo.
+            La mecánica principal gira en torno a revelar colores para eliminar obstáculos del mismo color, creando secuencias de puzles simples pero desafiantes.</p>
+
+        <img src="../media/png/MobiesEscape.png" alt="Captura de Mobie's Escape"
+            style="max-width: 100%; margin: 40px 0; border: 2px solid var(--accent-green); border-radius: 10px;">
+
+        <h2>Características principales</h2>
+        <ul
+            style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
+            <li>Plataformas con puzles en 2D basados en mecánicas de colores.</li>
+            <li>Revela y elimina obstáculos del mismo color para avanzar por los niveles.</li>
+            <li>Niveles diseñados a mano que combinan lógica con retos de tiempo.</li>
+            <li>Estilo visual minimalista, limpio y colorido.</li>
+        </ul>
+
+        <h2>Mi rol</h2>
+        <p>Como uno de los programadores del proyecto, contribuí en:</p>
+        <ul
+            style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
+            <li>Diseño y creación de los niveles finales del juego.</li>
+            <li>Programación de la lógica de niveles, incluyendo detección de colisiones y objetos interactivos.</li>
+            <li>Desarrollo del sistema de puntos de control (checkpoints).</li>
+            <li>Implementación de la lógica de inventario para la progresión de puzles.</li>
+            <li>Programación de eventos de animación y escenas finales (cutscenes).</li>
+        </ul>
+
+        <h2>Capturas de pantalla</h2>
+        <div
+            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
+
+            <div style="flex: 1 1 45%; min-width: 300px;">
+                <img src="../media/png/ME_Screenshot1.png" alt="Captura 1 de Mobie's Escape"
+                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+            </div>
+
+            <div style="flex: 1 1 45%; min-width: 300px;">
+                <img src="../media/png/ME_Screenshot2.png" alt="Captura 2 de Mobie's Escape"
+                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+            </div>
+
+            <div style="flex: 1 1 100%; margin-top: 20px;">
+                <img src="../media/png/ME_Screenshot3.png" alt="Captura 3 de Mobie's Escape"
+                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+            </div>
+        </div>
+
+        <h2>Jugar / Descargar</h2>
+        <p><a href="https://quantum-pixel.itch.io/mobies-escape" target="_blank"
+                style="color: var(--accent-green); font-weight: bold;">Jugar a Mobie's Escape en Itch.io →</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Pol Gomez. Todos los derechos reservados.
+    </footer>
+
+    <!-- Language Redirect Script -->
+    <script>
+        document.getElementById('language-switcher').addEventListener('change', function () {
+            const lang = this.value;
+            const currentPage = window.location.pathname;
+
+            if (lang === 'en') {
+                window.location.href = currentPage.replace('es_MinorGame1', 'MinorGame1');
+            } else {
+                window.location.href = currentPage.replace('MinorGame1', 'es_MinorGame1');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
