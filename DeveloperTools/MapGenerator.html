@@ -3,96 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dagger's Roguelike Map Generator - Pol Gomez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/rougelike-generator.css">
+    <title>Roguelike Map Generator — Pol Gomez</title>
+    <meta name="description" data-es-content="Roguelike Map Generator de Dagger — una herramienta de generación de mapas procedural basada en nodos para roguelikes 2D en Unity, con generación por semilla y vistas previas en tiempo real."
+        content="Dagger's Roguelike Map Generator — a procedural, node-based map generation tool for 2D roguelikes in Unity, with seeded generation and real-time editor previews.">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/tool-page.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Dagger's Roguelike Map Generator</h1>
-        <p>Procedural Node-Based Map Generation Tool for Unity</p>
-        <nav>
-            <a href="../index.html#tools">← Back to Developer Tools</a>
-        </nav>
+    <nav class="site-nav doc-nav" id="siteNav">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <div class="nav-right">
+                <a href="../index.html#tools" class="back-link" data-es="← Volver a herramientas">← Back to tools</a>
+                <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-opt" data-lang="es" aria-pressed="false">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="doc-hero">
+        <div class="container">
+            <span class="doc-kicker" data-es="Herramienta de editor de Unity">Unity Editor Tool</span>
+            <h1 data-es='<span class="gradient-text">Roguelike Map Generator</span> de Dagger'>Dagger's <span class="gradient-text">Roguelike Map Generator</span></h1>
+            <p class="lead"
+                data-es='Una herramienta de generación de mapas procedural basada en nodos para Unity. Construye estructuras de mapa rejugables mediante <strong>aleatoriedad controlada y parametrizada</strong>, dando al desarrollador control total sobre el flujo del mapa, las ramificaciones y los tipos de nodo para roguelikes y sistemas de progresión modulares.'>
+                A procedural, node-based map generation tool for Unity. It builds replayable map structures using
+                <strong>controlled, parameterized randomness</strong> — giving developers full command over map flow,
+                branching, and node types for roguelike and modular progression systems.</p>
+
+            <div class="meta-row">
+                <span class="badge badge-pending badge-live" data-es='<span class="dot"></span> Pendiente de aprobación en la Asset Store'><span class="dot"></span> Pending Asset Store approval</span>
+                <span class="sep"></span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag" data-es="Generación procedural">Procedural Generation</span>
+                <span class="tag" data-es="Grafo de nodos">Node Graph</span>
+            </div>
+
+            <div class="doc-actions">
+                <a href="../index.html#contact" class="btn btn-primary" data-es="Avísame del lanzamiento">Get notified on release</a>
+                <a href="../index.html#tools" class="btn btn-ghost" data-es="Todas las herramientas">All tools</a>
+            </div>
+
+            <div class="hero-shot reveal">
+                <img src="../media/png/MapGeneratorImage.png" alt="Roguelike Map Generator preview">
+            </div>
+        </div>
     </header>
-    <div
-        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
-        <div style="flex: 1 1 100%; margin-top: 20px;">
-            <img src="../media/png/MapGeneratorImage.png" alt="Mobie's Escape Screenshot 3"
-                style="width: 80%; border: 2px solid var(--accent-green); border-radius: 10px;">
+
+    <!-- BODY -->
+    <main class="doc-body">
+        <div class="container">
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Introducción">Introduction</h2>
+                <p data-es="Esta herramienta modular de Unity genera mapas basados en nodos de forma procedural mediante aleatoriedad controlada y parametrizada. Diseñada para ser flexible, permite construir estructuras de mapa rejugables para roguelikes y sistemas de progresión modulares, manteniendo el control total sobre el flujo del mapa, las ramificaciones y los tipos de nodo.">
+                    This modular Unity tool generates node-based maps procedurally using controlled, parameterized
+                    randomness. Designed for flexibility, it lets developers build replayable map structures for
+                    roguelike and modular progression systems — while retaining full control over map flow, branching,
+                    and node types.</p>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Aplicaciones prácticas">Practical applications</h2>
+                <ul class="feature-list">
+                    <li data-es="Mapas de mundo o mazmorras procedurales para juegos 2D.">Procedural overworld or dungeon maps for 2D games.</li>
+                    <li data-es="Cadenas de eventos o disposiciones de desafíos basadas en nodos.">Node-based event chains or challenge layouts.</li>
+                    <li data-es="Sistemas de progresión de mapa principal con nodos definidos por el desarrollador.">Main map progression systems with developer-defined nodes.</li>
+                    <li data-es="Lógica de minijuegos o subsistemas modulares.">Minigame logic or modular sub-systems.</li>
+                    <li data-es="Disposiciones dinámicas y rejugables que requieren aleatorización controlada.">Dynamic, replayable layouts requiring controlled randomization.</li>
+                </ul>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Filosofía de diseño">Design philosophy</h2>
+                <div class="callout">
+                    <p data-es='El generador se basa en un desarrollo modular y centrado en el editor. La generación procedural está totalmente parametrizada para ofrecer <strong>aleatoriedad estructurada</strong>, dando control al diseñador sin renunciar a la rejugabilidad. Su estructura limpia y orientada a API permite a los programadores ampliar la herramienta con facilidad, integrando grafos de nodos en los sistemas de juego sin fricción.'>
+                        The generator is built around modular, editor-first development. Procedural generation is fully
+                        parameterized to offer <strong>structured randomness</strong> — giving designers control while
+                        benefiting from replayability. Its clean, API-friendly structure lets programmers extend the
+                        tool easily, integrating node graphs into gameplay systems without friction.</p>
+                </div>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Características principales">Key features</h2>
+                <ul class="feature-list">
+                    <li data-es="Sistema de base de datos de nodos con ScriptableObject.">ScriptableObject node database system.</li>
+                    <li data-es="Generación de mapas con semilla o aleatoria, con control de reproducibilidad.">Seeded / random map generation with reproducibility control.</li>
+                    <li data-es="Soporte para ramificaciones, fusiones y nodos forzados.">Branching, merging, and forced-node support.</li>
+                    <li data-es="Ventana de editor con vistas previas visuales en tiempo real.">Editor window with real-time visual previews.</li>
+                    <li data-es="API de runtime limpia para consultar nodos y conexiones.">Clean runtime API for querying nodes and connections.</li>
+                    <li data-es="Arquitectura modular y ampliable para diseñadores y desarrolladores.">Modular, extendable architecture for designers and developers.</li>
+                </ul>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Capturas">Screenshots</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="../media/png/RMG_Screenshot1.PNG" alt="Editor window" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="../media/png/RMG_Screenshot2.PNG" alt="Node database" loading="lazy">
+                    </figure>
+                    <figure class="wide">
+                        <img src="../media/png/RMG_Screenshot3.PNG" alt="Procedural preview" loading="lazy">
+                    </figure>
+                </div>
+            </section>
+
+            <div class="cta-band reveal">
+                <h2 data-es="Muy pronto">Launching soon</h2>
+                <p data-es="Actualmente pendiente de aprobación en la Unity Asset Store. Escríbeme y te aviso en cuanto esté disponible.">
+                    Currently pending Unity Asset Store approval. Reach out and I'll let you know the moment it's live.</p>
+                <div class="doc-actions">
+                    <a href="../index.html#contact" class="btn btn-primary" data-es="Contacto">Get in touch</a>
+                    <a href="../index.html#tools" class="btn btn-ghost" data-es="Volver a herramientas">Back to tools</a>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <section class="two-column">
-        <div class="column-text">
-            <h2>Introduction</h2>
-            <p>This modular Unity tool generates node-based maps procedurally using controlled, parameterized
-                randomness. Designed for flexibility, it allows developers to build replayable map structures for
-                roguelike and modular progression systems—while retaining full control over map flow, branching, and
-                node types.</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <span class="footer-meta" data-es="© 2025 Pol Gomez — todos los derechos reservados">© 2025 Pol Gomez — all rights reserved</span>
         </div>
-
-        <div class="column-text">
-            <h2>Practical Applications</h2>
-            <ul>
-                <li>Procedural overworld or dungeon maps for 2D games.</li>
-                <li>Node-based event chains or challenge layouts.</li>
-                <li>Main map progression systems with developer-defined nodes.</li>
-                <li>Minigame logic or modular sub-systems.</li>
-                <li>Dynamic, replayable layouts requiring controlled randomization.</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="two-column">
-
-        <div class="column-text">
-            <h2>Design Philosophy</h2>
-            <p>The generator is built around modular, editor-first development. Procedural generation is fully
-                parameterized to offer structured randomness—giving designers control while benefiting from
-                replayability. Its clean, API-friendly structure allows programmers to extend the tool easily,
-                integrating node graphs into gameplay systems without friction.</p>
-        </div>
-
-        <div class="column-text">
-            <h2>Key Features</h2>
-            <ul>
-                <li>ScriptableObject node database system.</li>
-                <li>Seeded/random map generation with reproducibility control.</li>
-                <li>Branching, merging, and forced node support.</li>
-                <li>Editor window with real-time visual previews.</li>
-                <li>Clean runtime API for querying nodes and connections.</li>
-                <li>Modular and extendable architecture for both designers and developers.</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="screenshots-section">
-        <h2>Screenshots</h2>
-        <div class="screenshots-gallery">
-            <img src="../media/png/RMG_Screenshot1.PNG" alt="Editor Screenshot">
-            <img src="../media/png/RMG_Screenshot2.PNG" alt="Database Screenshot">
-            <img src="../media/png/RMG_Screenshot3.PNG" alt="Procedural Preview Screenshot">
-        </div>
-    </section>
-
-    <section class="status-section">
-        <p>
-            <span
-                style="background-color: #ffaa00; color: #000; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
-                Pending Unity Asset Store Approval
-            </span>
-        </p>
-    </section>
-
-    <footer>
-        &copy; 2025 Pol Gomez. All rights reserved.
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

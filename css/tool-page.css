@@ -1,171 +1,320 @@
-:root {
-    --background: #0d0d0d;
-    --primary-blue: #0f1f3a;
-    --accent-green: #00ff95;
-    --text-light: #e0e0e0;
-    --text-muted: #a0a0a0;
+/* =====================================================================
+   tool-page.css — shared case-study layout for interior pages.
+   Used by every developer-tool page AND every game-project page.
+   Requires base.css to be loaded first.
+   ===================================================================== */
+
+/* Simple back-nav bar ------------------------------------------------ */
+.doc-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
 }
 
-body {
-    margin: 0;
-    font-family: 'Inter', Arial, sans-serif;
-    background-color: var(--background);
-    color: var(--text-light);
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease, transform 0.2s var(--ease);
 }
 
-header {
-    background-color: var(--primary-blue);
-    padding: 20px;
-    text-align: center;
+.back-link:hover {
+    color: var(--primary);
+    transform: translateX(-3px);
 }
 
-h1,
-h2 {
-    font-family: 'Fira Code', 'Inter', Arial, sans-serif;
-    color: var(--accent-green);
+/* Hero -------------------------------------------------------------- */
+.doc-hero {
+    padding-block: clamp(40px, 6vw, 72px) clamp(28px, 4vw, 44px);
+    position: relative;
 }
 
-h2 {
-    text-align: center;
-    border-bottom: 2px solid var(--accent-green);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    font-size: 1.6em;
+.doc-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 0 0 18px;
+}
+
+.doc-hero h1 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+}
+
+.doc-hero .lead {
+    color: var(--text-muted);
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    max-width: 760px;
+    margin: 0 0 26px;
+}
+
+.doc-hero .lead strong {
+    color: var(--text);
+}
+
+.meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.meta-row .sep {
+    width: 1px;
+    height: 22px;
+    background: var(--border);
+    margin-inline: 4px;
+}
+
+.doc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+/* Main showcase image ---------------------------------------------- */
+.hero-shot {
+    margin-top: 40px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 40px 80px -44px rgba(0, 0, 0, 0.85), 0 0 60px -34px var(--glow);
+    background: var(--bg-2);
+}
+
+.hero-shot img {
     width: 100%;
-}
-
-nav a {
-    color: var(--accent-green);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--text-light);
-}
-
-.intro {
-    text-align: center;
-    padding: 50px 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    color: var(--text-muted);
-}
-
-.intro p {
-    line-height: 1.6em;
-}
-
-ul {
-    text-align: left;
-    max-width: 700px;
-    margin: 20px auto;
-    color: var(--text-muted);
-    font-size: 1.1em;
-    line-height: 1.6em;
-    background-color: var(--primary-blue);
-    border: 2px solid var(--accent-green);
-    border-radius: 8px;
-    padding: 25px 30px;
-    list-style-type: disc;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-img {
-    max-width: 90%;
-    margin: 30px auto;
     display: block;
-    border-radius: 10px;
-    border: 2px solid var(--accent-green);
-    box-shadow: 0 0 10px rgba(0, 255, 150, 0.2);
 }
 
-p span[style*="background-color"] {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 1.1em;
+/* Content ----------------------------------------------------------- */
+.doc-body {
+    padding-block: clamp(40px, 6vw, 72px);
 }
 
-a.button {
-    display: inline-block;
-    margin: 30px 0;
-    padding: 14px 28px;
-    border: 2px solid var(--accent-green);
-    color: var(--accent-green);
-    text-decoration: none;
-    font-family: 'Fira Code', 'Inter', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: var(--primary-blue);
+.doc-section {
+    margin-bottom: clamp(40px, 6vw, 68px);
 }
 
-a.button:hover {
-    background-color: var(--accent-green);
-    color: var(--background);
+.doc-section:last-child {
+    margin-bottom: 0;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+.doc-h2 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    letter-spacing: -0.01em;
+    margin: 0 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doc-h2::before {
+    content: "//";
+    color: var(--primary);
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.doc-section p {
     color: var(--text-muted);
-    background-color: var(--primary-blue);
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 0 16px;
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-
-    .intro {
-        font-size: 1em;
-        padding: 40px 15px;
-    }
-
-    ul {
-        font-size: 1em;
-        padding: 20px;
-    }
-
-    img {
-        width: 95%;
-    }
+.doc-section p strong {
+    color: var(--text);
 }
 
-/* Phones */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
+/* Two-column split (intro / problem-solution / design) ------------- */
+.split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
 
-    h2 {
-        font-size: 1.1em;
-    }
+.split-card {
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+}
 
-    .intro {
-        font-size: 0.95em;
-        padding: 30px 10px;
-    }
+.split-card h3 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+    color: var(--text);
+}
 
-    ul {
-        font-size: 0.95em;
-        padding: 15px;
-    }
+.split-card.problem h3 { color: #ff8b8b; }
+.split-card.solution h3 { color: var(--primary); }
 
-    a.button {
-        font-size: 1em;
-        padding: 10px 20px;
+.split-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Feature / bullet lists rendered as check cards ------------------- */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.feature-list.single {
+    grid-template-columns: 1fr;
+}
+
+.feature-list li {
+    position: relative;
+    padding: 16px 18px 16px 46px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.5;
+    transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+.feature-list li:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+    background: var(--surface-2);
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background: rgba(0, 255, 149, 0.12);
+    border: 1px solid var(--border-strong);
+}
+
+.feature-list li::after {
+    content: "";
+    position: absolute;
+    left: 21.5px;
+    top: 20px;
+    width: 5px;
+    height: 9px;
+    border: solid var(--primary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Highlight strip (technical highlights, "what this shows") -------- */
+.callout {
+    background:
+        radial-gradient(600px 200px at 0% 0%, rgba(0, 255, 149, 0.06), transparent 70%),
+        linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+}
+
+.callout p:last-child {
+    margin-bottom: 0;
+}
+
+/* Screenshot gallery ----------------------------------------------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.gallery .wide {
+    grid-column: 1 / -1;
+}
+
+.gallery figure {
+    margin: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-2);
+    transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.gallery figure:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-4px);
+    box-shadow: 0 26px 50px -34px rgba(0, 0, 0, 0.8);
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s var(--ease);
+}
+
+.gallery figure:hover img {
+    transform: scale(1.03);
+}
+
+/* Bottom call-to-action band --------------------------------------- */
+.cta-band {
+    margin-top: clamp(48px, 7vw, 80px);
+    text-align: center;
+    background:
+        radial-gradient(600px 300px at 50% 0%, rgba(0, 255, 149, 0.08), transparent 70%),
+        linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(36px, 5vw, 56px) 24px;
+}
+
+.cta-band h2 {
+    font-family: var(--font-mono);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin: 0 0 12px;
+}
+
+.cta-band p {
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto 26px;
+}
+
+.cta-band .doc-actions {
+    justify-content: center;
+    margin: 0;
+}
+
+/* Responsive -------------------------------------------------------- */
+@media (max-width: 780px) {
+    .split,
+    .feature-list,
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }

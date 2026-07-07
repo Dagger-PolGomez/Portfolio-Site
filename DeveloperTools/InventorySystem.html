@@ -3,73 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dagger's Inventory Management System - Pol Gomez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Inventory &amp; Crafting System — Pol Gomez</title>
+    <meta name="description" data-es-content="Inventory & Crafting System de Dagger — un framework modular de inventario y crafteo para Unity con base de datos de objetos personalizable. Publicado en la Unity Asset Store."
+        content="Dagger's Inventory & Crafting System — a modular Unity inventory and crafting framework with a customizable item database. Published on the Unity Asset Store.">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/tool-page.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Dagger's Inventory Management System</h1>
-        <p>A Unity Tool by Pol Gomez</p>
-        <nav>
-            <a href="../index.html#tools">← Back to Developer Tools</a>
-        </nav>
-    </header>
-
-    <section class="intro">
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
-            <div style="flex: 1 1 100%; margin-top: 20px;">
-                <img src="../media/png/InventoryImage.png" alt="Mobie's Escape Screenshot 3"
-                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+    <nav class="site-nav doc-nav" id="siteNav">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <div class="nav-right">
+                <a href="../index.html#tools" class="back-link" data-es="← Volver a herramientas">← Back to tools</a>
+                <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-opt" data-lang="es" aria-pressed="false">ES</button>
+                </div>
             </div>
         </div>
-        <p>
-            This tool was my first major step into Unity tool development. Through it, I learned database management,
-            Unity editor scripting, and how to structure modular systems for other developers. While I consider it a
-            learning project, it fills a niche in the Unity Asset Store and represents a critical advancement in my
-            development skills.
-        </p>
+    </nav>
 
-        <h2>Key Features</h2>
-        <ul>
-            <li>Customizable item database with user-defined fields.</li>
-            <li>Inventory system supporting stackable items and max stack parameters.</li>
-            <li>Editor-based crafting recipe management.</li>
-            <li>Modular API-like calls for inventory management in gameplay code.</li>
-            <li>Crafting system integrated directly with the inventory.</li>
-            <li>Failure/success responses for accurate game logic control.</li>
-            <li>Optimized for modular implementation across projects.</li>
-        </ul>
+    <!-- HERO -->
+    <header class="doc-hero">
+        <div class="container">
+            <span class="doc-kicker" data-es="Herramienta de Unity">Unity Tool</span>
+            <h1 data-es='<span class="gradient-text">Inventory &amp; Crafting System</span> de Dagger'>Dagger's <span class="gradient-text">Inventory &amp; Crafting System</span></h1>
+            <p class="lead"
+                data-es='Un framework modular de inventario y crafteo para Unity, con base de datos de objetos personalizable, objetos apilables y un <strong>sistema de recetas gestionado desde el editor</strong> que se integra en el código de juego con llamadas limpias tipo API.'>
+                A modular inventory and crafting framework for Unity, featuring a customizable item database, stackable
+                items, and an <strong>editor-driven recipe system</strong> that plugs into gameplay code with clean,
+                API-like calls.</p>
 
-        <h2>Current Status</h2>
-        <p>
-            <span
-                style="background-color: #34e91d; color: #000; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
-                Published!
-            </span>
-        </p>
-        <p>
-            <span
-                style="background-color: #34e91d; color: #000; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
-                <a href="https://assetstore.unity.com/packages/tools/game-toolkits/inventory-crafting-system-314468">View
-                    in Unity Asset Store</a>
-            </span>
-        </p>
+            <div class="meta-row">
+                <span class="badge badge-published badge-live" data-es='<span class="dot"></span> Publicado'><span class="dot"></span> Published</span>
+                <span class="sep"></span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">ScriptableObjects</span>
+                <span class="tag" data-es="Modular">Modular</span>
+            </div>
 
-        <h2>Screenshots</h2>
-        <img src="../media/png/InventorySystem_Screenshot1.PNG" alt="Inventory Editor Screenshot">
-        <img src="../media/png/InventorySystem_Screenshot2.PNG" alt="Crafting Editor Screenshot">
-        <img src="../media/png/InventorySystem_Screenshot3.PNG" alt="In-Game Inventory UI Screenshot">
+            <div class="doc-actions">
+                <a href="https://assetstore.unity.com/packages/tools/game-toolkits/inventory-crafting-system-314468"
+                    target="_blank" rel="noopener" class="btn btn-primary" data-es="Ver en la Asset Store">View on the Asset Store</a>
+                <a href="../index.html#tools" class="btn btn-ghost" data-es="Todas las herramientas">All tools</a>
+            </div>
 
-    </section>
+            <div class="hero-shot reveal">
+                <img src="../media/png/InventoryImage.png" alt="Inventory & Crafting System window">
+            </div>
+        </div>
+    </header>
 
-    <footer>
-        &copy; 2025 Pol Gomez. All rights reserved.
+    <!-- BODY -->
+    <main class="doc-body">
+        <div class="container">
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Resumen">Overview</h2>
+                <p data-es="Esta herramienta fue mi primer gran paso en el desarrollo de herramientas para Unity. Con ella aprendí gestión de bases de datos, scripting del editor de Unity y cómo estructurar sistemas modulares para otros desarrolladores. Aunque la considero un proyecto de aprendizaje, cubre un nicho real en la Unity Asset Store y supone un avance clave en mis habilidades de desarrollo.">
+                    This tool was my first major step into Unity tool development. Through it, I learned database
+                    management, Unity editor scripting, and how to structure modular systems for other developers.
+                    While I consider it a learning project, it fills a real niche on the Unity Asset Store and
+                    represents a critical advancement in my development skills.</p>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Características principales">Key features</h2>
+                <ul class="feature-list">
+                    <li data-es="Base de datos de objetos personalizable con campos definidos por el usuario.">Customizable item database with user-defined fields.</li>
+                    <li data-es="Inventario compatible con objetos apilables y parámetros de pila máxima.">Inventory supporting stackable items and max-stack parameters.</li>
+                    <li data-es="Gestión de recetas de crafteo desde el editor.">Editor-based crafting recipe management.</li>
+                    <li data-es="Llamadas modulares tipo API para gestionar el inventario desde el código de juego.">Modular, API-like calls for inventory management in gameplay code.</li>
+                    <li data-es="Sistema de crafteo integrado directamente con el inventario.">Crafting system integrated directly with the inventory.</li>
+                    <li data-es="Respuestas de éxito y de fallo para un control preciso de la lógica de juego.">Failure / success responses for accurate game-logic control.</li>
+                    <li data-es="Optimizado para una implementación modular en distintos proyectos.">Optimized for modular implementation across projects.</li>
+                </ul>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Capturas">Screenshots</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="../media/png/InventorySystem_Screenshot1.PNG" alt="Inventory editor" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="../media/png/InventorySystem_Screenshot2.PNG" alt="Crafting editor" loading="lazy">
+                    </figure>
+                    <figure class="wide">
+                        <img src="../media/png/InventorySystem_Screenshot3.PNG" alt="In-game inventory UI"
+                            loading="lazy">
+                    </figure>
+                </div>
+            </section>
+
+            <div class="cta-band reveal">
+                <h2 data-es="Añádelo a tu proyecto">Add it to your project</h2>
+                <p data-es="Una base modular de inventario y crafteo, lista para integrar en cualquier juego de Unity.">A
+                    modular inventory + crafting foundation, ready to drop into any Unity game.</p>
+                <div class="doc-actions">
+                    <a href="https://assetstore.unity.com/packages/tools/game-toolkits/inventory-crafting-system-314468"
+                        target="_blank" rel="noopener" class="btn btn-primary" data-es="Ver en la Asset Store">View on the Asset Store</a>
+                    <a href="../index.html#contact" class="btn btn-ghost" data-es="Contacto">Get in touch</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <span class="footer-meta" data-es="© 2025 Pol Gomez — todos los derechos reservados">© 2025 Pol Gomez — all rights reserved</span>
+        </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

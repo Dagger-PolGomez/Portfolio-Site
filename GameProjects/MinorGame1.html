@@ -3,80 +3,136 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mobie's Escape - Pol Gomez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/project-page.css">
+    <title>Mobie's Escape — Pol Gomez</title>
+    <meta name="description" data-es-content="Mobie's Escape — un plataformas de puzles en 2D desarrollado con un equipo universitario, basado en revelar colores para borrar obstáculos del mismo color."
+        content="Mobie's Escape — a 2D puzzle platformer built with a university team, based on revealing colors to erase matching obstacles.">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/tool-page.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Mobie's Escape</h1>
-        <p>A Game Project by Pol Gomez</p>
-        <nav>
-            <a href="../index.html#projects">← Back to Projects</a>
-        </nav>
+    <nav class="site-nav doc-nav" id="siteNav">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <div class="nav-right">
+                <a href="../index.html#games" class="back-link" data-es="← Volver a juegos">← Back to games</a>
+                <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-opt" data-lang="es" aria-pressed="false">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="doc-hero">
+        <div class="container">
+            <span class="doc-kicker" data-es="Proyecto universitario en equipo">University Team Project</span>
+            <h1><span class="gradient-text">Mobie's Escape</span></h1>
+            <p class="lead"
+                data-es='Un plataformas de puzles en 2D desarrollado con un equipo universitario. La mecánica central gira en torno a <strong>revelar colores</strong> para eliminar obstáculos del mismo color, creando secuencias de puzle sencillas pero desafiantes.'>
+                A 2D puzzle platformer built with a university team. The core mechanic revolves around
+                <strong>revealing colors</strong> to remove obstacles of the same color, creating simple yet
+                challenging puzzle sequences.</p>
+
+            <div class="meta-row">
+                <span class="badge" data-es="Plataformas de puzles">Puzzle Platformer</span>
+                <span class="sep"></span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag" data-es="Diseño de niveles">Level Design</span>
+            </div>
+
+            <div class="doc-actions">
+                <a href="https://quantum-pixel.itch.io/mobies-escape" target="_blank" rel="noopener"
+                    class="btn btn-primary" data-es="Jugar en Itch.io">Play on Itch.io</a>
+                <a href="../index.html#games" class="btn btn-ghost" data-es="Todos los juegos">All games</a>
+            </div>
+
+            <div class="hero-shot reveal">
+                <img src="../media/png/MobiesEscape.png" alt="Mobie's Escape screenshot">
+            </div>
+        </div>
     </header>
 
-    <section class="intro">
-        <p><strong>Mobie's Escape</strong> is a 2D puzzle platformer developed as a university team project.
-            The core mechanic revolves around revealing colors to remove obstacles of the same color, creating
-            simple yet challenging puzzle sequences.</p>
+    <!-- BODY -->
+    <main class="doc-body">
+        <div class="container">
 
-        <img src="../media/png/MobiesEscape.png" alt="Mobie's Escape Screenshot"
-            style="max-width: 100%; margin: 40px 0; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Resumen">Overview</h2>
+                <p data-es="Mobie's Escape es un plataformas de puzles en 2D desarrollado como proyecto universitario en equipo. El jugador revela y borra obstáculos del mismo color para avanzar, combinando lógica y ritmo en un mundo minimalista, limpio y colorido.">
+                    Mobie's Escape is a 2D puzzle platformer developed as a university team project. Players reveal and
+                    erase color-matching obstacles to progress, weaving logic and timing into a clean, colorful
+                    minimalist world.</p>
+            </section>
 
-        <h2>Key Features</h2>
-        <ul
-            style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
-            <li>2D Puzzle Platformer with color-based puzzle mechanics.</li>
-            <li>Reveal and erase color-matching obstacles to progress through levels.</li>
-            <li>Hand-crafted level design balancing logic and timing challenges.</li>
-            <li>Simple, clean, and colorful minimalist art style.</li>
-        </ul>
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Características principales">Key features</h2>
+                <ul class="feature-list">
+                    <li data-es="Plataformas de puzles en 2D con mecánicas basadas en colores.">2D puzzle platformer with color-based puzzle mechanics.</li>
+                    <li data-es="Revela y borra obstáculos del mismo color para avanzar por los niveles.">Reveal and erase color-matching obstacles to progress through levels.</li>
+                    <li data-es="Diseño de niveles hecho a mano que equilibra retos de lógica y de ritmo.">Hand-crafted level design balancing logic and timing challenges.</li>
+                    <li data-es="Estilo artístico minimalista, sencillo, limpio y colorido.">Simple, clean, and colorful minimalist art style.</li>
+                </ul>
+            </section>
 
-        <h2>My Role</h2>
-        <p>As one of the programmers on the project, I contributed to:
-        <ul
-            style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
-            <li>Design and creation of the final game levels.</li>
-            <li>Programming level logic, including hit detection and puzzle object interactions.</li>
-            <li>Developing the checkpoint system to handle player progress.</li>
-            <li>Implementing inventory management logic for puzzle progression.</li>
-            <li>Scripting cutscene triggers and animation events for the ending sequence.</li>
-        </ul>
-        </p>
-        <h2>Screenshots</h2>
-        <div
-            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Mi papel">My role</h2>
+                <p data-es="Como uno de los programadores del proyecto, contribuí a:">As one of the programmers on the
+                    project, I contributed to:</p>
+                <ul class="feature-list">
+                    <li data-es="Diseñar y crear los niveles finales del juego.">Design and creation of the final game levels.</li>
+                    <li data-es="Programar la lógica de niveles, incluyendo la detección de colisiones y las interacciones de los objetos de puzle.">Programming level logic, including hit detection and puzzle-object interactions.</li>
+                    <li data-es="Desarrollar el sistema de puntos de control para gestionar el progreso del jugador.">Developing the checkpoint system to handle player progress.</li>
+                    <li data-es="Implementar la lógica de gestión de inventario para la progresión de los puzles.">Implementing inventory management logic for puzzle progression.</li>
+                    <li data-es="Programar los disparadores de cinemáticas y los eventos de animación de la secuencia final.">Scripting cutscene triggers and animation events for the ending sequence.</li>
+                </ul>
+            </section>
 
-            <div style="flex: 1 1 45%; min-width: 300px;">
-                <img src="../media/png/ME_Screenshot1.png" alt="Mobie's Escape Screenshot 1"
-                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
-            </div>
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Capturas">Screenshots</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="../media/png/ME_Screenshot1.png" alt="Mobie's Escape screenshot 1" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="../media/png/ME_Screenshot2.png" alt="Mobie's Escape screenshot 2" loading="lazy">
+                    </figure>
+                    <figure class="wide">
+                        <img src="../media/png/ME_Screenshot3.png" alt="Mobie's Escape screenshot 3" loading="lazy">
+                    </figure>
+                </div>
+            </section>
 
-            <div style="flex: 1 1 45%; min-width: 300px;">
-                <img src="../media/png/ME_Screenshot2.png" alt="Mobie's Escape Screenshot 2"
-                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
-            </div>
-
-            <div style="flex: 1 1 100%; margin-top: 20px;">
-                <img src="../media/png/ME_Screenshot3.png" alt="Mobie's Escape Screenshot 3"
-                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <div class="cta-band reveal">
+                <h2 data-es="Juega a Mobie's Escape">Play Mobie's Escape</h2>
+                <p data-es="Gratis en Itch.io.">Free to play now on Itch.io.</p>
+                <div class="doc-actions">
+                    <a href="https://quantum-pixel.itch.io/mobies-escape" target="_blank" rel="noopener"
+                        class="btn btn-primary" data-es="Jugar en Itch.io">Play on Itch.io</a>
+                    <a href="../index.html#games" class="btn btn-ghost" data-es="Volver a juegos">Back to games</a>
+                </div>
             </div>
 
         </div>
+    </main>
 
-
-        <h2>Download / Play</h2>
-        <p><a href="https://quantum-pixel.itch.io/mobies-escape" target="_blank"
-                style="color: var(--accent-green); font-weight: bold;">Play Mobie's Escape on Itch.io →</a></p>
-    </section>
-
-    <footer>
-        &copy; 2025 Pol Gomez. All rights reserved.
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <span class="footer-meta" data-es="© 2025 Pol Gomez — todos los derechos reservados">© 2025 Pol Gomez — all rights reserved</span>
+        </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

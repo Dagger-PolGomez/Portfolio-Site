@@ -3,87 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dagger's Project Cleanup Tool - Pol Gomez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Asset Cleanup Tool — Pol Gomez</title>
+    <meta name="description" data-es-content="Asset Cleanup de Dagger — un limpiador de assets sin usar para Unity, seguro y automatizado. Más de 1,7k descargas en la Unity Asset Store."
+        content="Dagger's Asset Cleanup — a safe, automated unused-asset cleaner for Unity. 1.7k+ downloads on the Unity Asset Store.">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/tool-page.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Dagger's Asset Cleanup Tool</h1>
-        <p>A Safe, Automated Unused Asset Cleaner for Unity</p>
-        <nav>
-            <a href="../index.html#tools">← Back to Developer Tools</a>
-        </nav>
-    </header>
-
-    <section class="intro">
-        <div
-            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
-            <div style="flex: 1 1 100%; margin-top: 20px;">
-                <img src="../media/png/AssetCleanerImage.png" alt="Mobie's Escape Screenshot 3"
-                    style="width: 100%; border: 2px solid var(--accent-green); border-radius: 10px;">
+    <nav class="site-nav doc-nav" id="siteNav">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <div class="nav-right">
+                <a href="../index.html#tools" class="back-link" data-es="← Volver a herramientas">← Back to tools</a>
+                <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-opt" data-lang="es" aria-pressed="false">ES</button>
+                </div>
             </div>
         </div>
-        <p>This Unity editor extension detects and removes unused assets from projects safely and efficiently. Designed
-            for developers managing large or long-term projects, it prevents content bloat, optimizes repositories, and
-            accelerates workflows by eliminating unused models, textures, scripts, and more.</p>
-        <h2>Key Features</h2>
-        <ul>
-            <li>Manual scene-based scanning: analyze only developer-selected scenes.</li>
-            <li>Recursive folder omission system for protecting sensitive assets.</li>
-            <li>Comprehensive unused asset detection using Unity's dependency system.</li>
-            <li>Safe, controlled bulk deletion workflow with clear confirmations.</li>
-            <li>Optional per-asset review with ping-to-Project feature for validation.</li>
-            <li>Immediate asset database refresh after deletions.</li>
-            <li>Intuitive, responsive editor window UI with organized asset reporting.</li>
-        </ul>
+    </nav>
 
-        <h2>Who This Tool Is For</h2>
-        <ul>
-            <li>Developers working in large or asset-heavy Unity projects.</li>
-            <li>Teams using version control seeking cleaner repositories.</li>
-            <li>Indie developers optimizing project size and build cleanliness.</li>
-            <li>Asset Store publishers preparing professional packages.</li>
-            <li>QA teams maintaining build hygiene across multiple projects.</li>
-        </ul>
+    <!-- HERO -->
+    <header class="doc-hero">
+        <div class="container">
+            <span class="doc-kicker" data-es="Herramienta de editor de Unity">Unity Editor Tool</span>
+            <h1 data-es='<span class="gradient-text">Asset Cleanup</span> de Dagger'>Dagger's <span class="gradient-text">Asset Cleanup</span></h1>
+            <p class="lead"
+                data-es='Un limpiador de assets sin usar para Unity, seguro y automatizado. Detecta y elimina assets sin usar <strong>de forma segura y eficiente</strong>, evitando el exceso de contenido, optimizando repositorios y acelerando el trabajo en proyectos grandes o de larga duración.'>
+                A safe, automated unused-asset cleaner for Unity. It detects and removes unused assets
+                <strong>safely and efficiently</strong> — preventing content bloat, optimizing repositories, and
+                accelerating workflows on large or long-term projects.</p>
 
-        <h2>Why This Tool Stands Out</h2>
-        <ul>
-            <li>Manual scene selection for precision control.</li>
-            <li>Recursive omit folder protection (often missing in competing tools).</li>
-            <li>Minimal, production-focused UI for safe operation.</li>
-            <li>Self-protects against accidental deletion of its own scripts.</li>
-            <li>No impact on runtime behavior or build pipeline.</li>
-        </ul>
+            <div class="meta-row">
+                <span class="badge badge-released badge-live" data-es='<span class="dot"></span> Publicado'><span class="dot"></span> Released</span>
+                <span class="badge" data-es="1,7k+ descargas">1.7k+ downloads</span>
+                <span class="sep"></span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag" data-es="Optimización">Optimization</span>
+                <span class="tag" data-es="Grafo de dependencias">Dependency Graph</span>
+            </div>
 
-        <h2>Current Status</h2>
-        <p>
-            <span
-                style="background-color: #00ff95; color: #000; padding: 5px 10px; border-radius: 5px; font-weight: bold;"> 
-                <a href="https://assetstore.unity.com/packages/tools/game-toolkits/dagger-s-asset-cleanup-327245">
-                Released!
-                </a>
-            </span>
-        </p>
-        <p>
-            <span
-                style="color: #00ff95; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
-                1.7k+ downloads
-            </span>
-        </p>
+            <div class="doc-actions">
+                <a href="https://assetstore.unity.com/packages/tools/game-toolkits/dagger-s-asset-cleanup-327245"
+                    target="_blank" rel="noopener" class="btn btn-primary" data-es="Ver en la Asset Store">View on the Asset Store</a>
+                <a href="../index.html#tools" class="btn btn-ghost" data-es="Todas las herramientas">All tools</a>
+            </div>
 
+            <div class="hero-shot reveal">
+                <img src="../media/png/AssetCleanerImage.png" alt="Asset Cleanup Tool window">
+            </div>
+        </div>
+    </header>
 
-    </section>
+    <!-- BODY -->
+    <main class="doc-body">
+        <div class="container">
 
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Resumen">Overview</h2>
+                <p data-es="Esta extensión del editor de Unity detecta y elimina assets sin usar de los proyectos de forma segura y eficiente. Pensada para desarrolladores que gestionan proyectos grandes o de larga duración, evita el exceso de contenido, optimiza repositorios y acelera el trabajo eliminando modelos, texturas, scripts y más sin usar, sin tocar nunca el comportamiento en tiempo de ejecución ni el pipeline de build.">
+                    This Unity editor extension detects and removes unused assets from projects safely and efficiently.
+                    Designed for developers managing large or long-term projects, it prevents content bloat, optimizes
+                    repositories, and accelerates workflows by eliminating unused models, textures, scripts, and more —
+                    all without ever touching runtime behaviour or the build pipeline.</p>
+            </section>
 
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Características principales">Key features</h2>
+                <ul class="feature-list">
+                    <li data-es="Escaneo manual por escenas: analiza solo las escenas que elija el desarrollador.">Manual scene-based scanning — analyze only developer-selected scenes.</li>
+                    <li data-es="Sistema de omisión recursiva de carpetas para proteger assets sensibles.">Recursive folder omission system for protecting sensitive assets.</li>
+                    <li data-es="Detección exhaustiva de assets sin usar mediante el sistema de dependencias de Unity.">Comprehensive unused-asset detection using Unity's dependency system.</li>
+                    <li data-es="Flujo de borrado masivo seguro y controlado con confirmaciones claras.">Safe, controlled bulk-deletion workflow with clear confirmations.</li>
+                    <li data-es="Revisión opcional asset por asset, con resaltado en el Project para validar.">Optional per-asset review with ping-to-Project for validation.</li>
+                    <li data-es="Actualización inmediata de la base de datos de assets tras el borrado.">Immediate asset database refresh after deletions.</li>
+                    <li data-es="Ventana de editor intuitiva y adaptable, con informes de assets organizados.">Intuitive, responsive editor window with organized asset reporting.</li>
+                </ul>
+            </section>
 
-    <footer>
-        &copy; 2025 Pol Gomez. All rights reserved.
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Para quién es">Who it's for</h2>
+                <ul class="feature-list">
+                    <li data-es="Desarrolladores que trabajan en proyectos de Unity grandes o con muchos assets.">Developers working in large or asset-heavy Unity projects.</li>
+                    <li data-es="Equipos con control de versiones que quieren repositorios más limpios.">Teams using version control who want cleaner repositories.</li>
+                    <li data-es="Desarrolladores indie que optimizan el tamaño del proyecto y la limpieza de las builds.">Indie developers optimizing project size and build cleanliness.</li>
+                    <li data-es="Publicadores de la Asset Store que preparan paquetes profesionales.">Asset Store publishers preparing professional packages.</li>
+                    <li data-es="Equipos de QA que mantienen la higiene de las builds en varios proyectos.">QA teams maintaining build hygiene across multiple projects.</li>
+                </ul>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Por qué destaca">Why it stands out</h2>
+                <ul class="feature-list">
+                    <li data-es="Selección manual de escenas para un control preciso.">Manual scene selection for precision control.</li>
+                    <li data-es="Protección recursiva de carpetas omitidas, algo que suele faltar en herramientas de la competencia.">Recursive omit-folder protection — often missing in competing tools.</li>
+                    <li data-es="Interfaz mínima y orientada a producción para operar con seguridad.">Minimal, production-focused UI for safe operation.</li>
+                    <li data-es="Se autoprotege frente al borrado accidental de sus propios scripts.">Self-protects against accidental deletion of its own scripts.</li>
+                    <li data-es="Sin impacto en el comportamiento en tiempo de ejecución ni en el pipeline de build.">No impact on runtime behaviour or the build pipeline.</li>
+                </ul>
+            </section>
+
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="En el editor">In the editor</h2>
+                <div class="gallery">
+                    <figure class="wide">
+                        <img src="../media/png/AC_Screenshot1.PNG" alt="Asset Cleanup scanning results" loading="lazy">
+                    </figure>
+                </div>
+            </section>
+
+            <div class="cta-band reveal">
+                <h2 data-es="Limpia tu proyecto">Clean up your project</h2>
+                <p data-es='La usan <strong>más de 1,7k</strong> desarrolladores en la Unity Asset Store.'>Trusted by <strong>1.7k+</strong> developers on the Unity Asset Store.</p>
+                <div class="doc-actions">
+                    <a href="https://assetstore.unity.com/packages/tools/game-toolkits/dagger-s-asset-cleanup-327245"
+                        target="_blank" rel="noopener" class="btn btn-primary" data-es="Ver en la Asset Store">View on the Asset Store</a>
+                    <a href="../index.html#contact" class="btn btn-ghost" data-es="Contacto">Get in touch</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <span class="footer-meta" data-es="© 2025 Pol Gomez — todos los derechos reservados">© 2025 Pol Gomez — all rights reserved</span>
+        </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

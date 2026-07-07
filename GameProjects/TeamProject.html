@@ -3,75 +3,147 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kill.exe - Pol Gomez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/project-page.css">
+    <title>Kill.exe — Pol Gomez</title>
+    <meta name="description" data-es-content="Kill.exe — un roguelike de supervivencia horda en 2D creado por un equipo de 5 personas. Pol Gomez fue productor y programador de juego."
+        content="Kill.exe — a 2D horde-survival roguelike built by a 5-person team. Pol Gomez served as producer and gameplay programmer.">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/tool-page.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Kill.exe</h1>
-        <p>A Game Project by Pol Gomez</p>
-        <nav>
-            <a href="../index.html#projects">← Back to Projects</a>
-        </nav>
+    <nav class="site-nav doc-nav" id="siteNav">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <div class="nav-right">
+                <a href="../index.html#games" class="back-link" data-es="← Volver a juegos">← Back to games</a>
+                <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                    <button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-opt" data-lang="es" aria-pressed="false">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="doc-hero">
+        <div class="container">
+            <span class="doc-kicker" data-es="Proyecto en equipo · 2024–2025">Team Project · 2024–2025</span>
+            <h1><span class="gradient-text">Kill.exe</span></h1>
+            <p class="lead"
+                data-es='Un roguelike de supervivencia horda en 2D desarrollado por un equipo de 5 personas siguiendo un pipeline de producción completo, del concepto a la build final. Inspirado en Vampire Survivors, mi aportación abarcó tanto la <strong>programación principal</strong> como el <strong>liderazgo oficial del equipo</strong>.'>
+                A 2D horde-survival roguelike developed by a 5-person team across a full production pipeline, from
+                concept to final build. Inspired by Vampire Survivors, my contribution spanned both
+                <strong>core programming</strong> and official <strong>team leadership</strong>.</p>
+
+            <div class="meta-row">
+                <span class="badge badge-released badge-live" data-es='<span class="dot"></span> Publicado'><span class="dot"></span> Shipped</span>
+                <span class="badge" data-es="Equipo de 5">Team of 5</span>
+                <span class="sep"></span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Roguelike</span>
+                <span class="tag" data-es="Productor">Producer</span>
+            </div>
+
+            <div class="doc-actions">
+                <a href="https://logstormgames.itch.io/killexe" target="_blank" rel="noopener"
+                    class="btn btn-primary" data-es="Jugar en Itch.io">Play on Itch.io</a>
+                <a href="https://logstorm.es" target="_blank" rel="noopener" class="btn btn-ghost">Logstorm Games</a>
+            </div>
+
+            <div class="hero-shot reveal">
+                <img src="../media/Gif/KE_Banner.gif" alt="Kill.exe gameplay banner">
+            </div>
+        </div>
     </header>
 
-    <section class="intro">
-        <p><strong>Kill.exe</strong> is a 2D roguelike action game developed in a 5-person team during the 2024–2025 academic year. Inspired by Vampire Survivors-style gameplay, this project aimed to simulate a full production pipeline from concept to final build. My contributions spanned both core programming and official team leadership.</p>
+    <!-- BODY -->
+    <main class="doc-body">
+        <div class="container">
 
-        <img src="../media/Gif/KE_Banner.gif" alt="Kill.exe Main Screenshot"
-            style="max-width: 100%; margin: 40px 0; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Resumen">Overview</h2>
+                <p data-es="Kill.exe se desarrolló durante el curso 2024–2025 con el objetivo de simular un pipeline de producción completo, del concepto a una build pulida y publicada. Como programador principal y productor oficial del equipo, ayudé a llevar el juego del prototipo al lanzamiento manteniendo al equipo dentro del calendario.">
+                    Kill.exe was developed during the 2024–2025 academic year with the goal of simulating a full
+                    production pipeline — from concept through to a polished, shipped build. As both a core programmer
+                    and the team's official producer, I helped drive the game from prototype to release while keeping
+                    the team on schedule.</p>
+            </section>
 
-        <h2>Key Features</h2>
-        <ul style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
-            <li>Fast-paced roguelike combat inspired by horde-survival mechanics.</li>
-            <li>13 unique active and passive items with modular implementation.</li>
-            <li>Wave-based progression with scalable difficulty and enemy variety.</li>
-            <li>Stylized pixel art and visual effects enhancing chaotic gameplay.</li>
-        </ul>
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Características principales">Key features</h2>
+                <ul class="feature-list">
+                    <li data-es="Combate roguelike trepidante inspirado en las mecánicas de supervivencia horda.">Fast-paced roguelike combat inspired by horde-survival mechanics.</li>
+                    <li data-es="13 objetos activos y pasivos únicos con implementación modular.">13 unique active and passive items with modular implementation.</li>
+                    <li data-es="Progresión por oleadas con dificultad escalable y variedad de enemigos.">Wave-based progression with scalable difficulty and enemy variety.</li>
+                    <li data-es="Pixel art estilizado y efectos visuales que realzan un gameplay caótico.">Stylized pixel art and visual effects enhancing chaotic gameplay.</li>
+                </ul>
+            </section>
 
-        <h2>My Role</h2>
-        <p>I served as both a core programmer and the official producer for the team. My responsibilities included:</p>
-        <ul style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1em; line-height: 1.6em; color: var(--text-muted);">
-            <li>Creating the modular item system, enabling scalable addition of gameplay items.</li>
-            <li>Designing and programming all 13 passive and active items in the game.</li>
-            <li>Establishing programming guidelines and project structure in early development.</li>
-            <li>Implementing inventory and equipment logic to support item usage and synergies.</li>
-            <li>Managing the team using Agile methodology and a simplified JIRA-like workflow.</li>
-            <li>Maintaining version control using GitHub and ensuring development workflow consistency.</li>
-            <li>Collaborating with the UX designer to improve gameplay feel and system feedback.</li>
-        </ul>
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Mi papel">My role</h2>
+                <p data-es="Fui programador principal y productor oficial del equipo. Mis responsabilidades incluían:">I
+                    served as both a core programmer and the official producer for the team. My responsibilities
+                    included:</p>
+                <ul class="feature-list">
+                    <li data-es="Crear el sistema modular de objetos, que permitía añadir objetos de juego de forma escalable.">Creating the modular item system, enabling scalable addition of gameplay items.</li>
+                    <li data-es="Diseñar y programar los 13 objetos pasivos y activos del juego.">Designing and programming all 13 passive and active items in the game.</li>
+                    <li data-es="Establecer las guías de programación y la estructura del proyecto en el inicio del desarrollo.">Establishing programming guidelines and project structure in early development.</li>
+                    <li data-es="Implementar la lógica de inventario y equipamiento para dar soporte al uso de objetos y a las sinergias.">Implementing inventory and equipment logic to support item usage and synergies.</li>
+                    <li data-es="Gestionar el equipo con metodología ágil y un flujo de trabajo simplificado tipo JIRA.">Managing the team using Agile methodology and a simplified JIRA-like workflow.</li>
+                    <li data-es="Mantener el control de versiones con GitHub y garantizar la consistencia del flujo de trabajo.">Maintaining version control with GitHub and ensuring workflow consistency.</li>
+                    <li data-es="Colaborar con la diseñadora de UX para mejorar las sensaciones de juego y el feedback.">Collaborating with the UX designer to improve gameplay feel and feedback.</li>
+                </ul>
+                <p style="margin-top:16px;" data-es="Mi papel estaba designado y reconocido oficialmente dentro del equipo, y me aseguré de forma constante de que cumpliéramos los plazos clave y los hitos de producción.">
+                    My role was officially designated and recognized within the team, and I consistently ensured we met
+                    key deadlines and production milestones.</p>
+            </section>
 
-        <p>My role was officially designated and recognized within the team, and I consistently ensured the team met key deadlines and production milestones.</p>
+            <section class="doc-section reveal">
+                <h2 class="doc-h2" data-es="Capturas">Screenshots</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="../media/png/KE_Screenshot1.png" alt="Kill.exe screenshot 1" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="../media/png/KE_Screenshot2.png" alt="Kill.exe screenshot 2" loading="lazy">
+                    </figure>
+                    <figure class="wide">
+                        <img src="../media/png/KE_Screenshot3.png" alt="Kill.exe screenshot 3" loading="lazy">
+                    </figure>
+                </div>
+            </section>
 
-        <h2>Screenshots</h2>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0;">
-            <img src="../media/png/KE_Screenshot1.png" alt="Kill.exe Screenshot 1"
-                style="max-width: 300px; border: 2px solid var(--accent-green); border-radius: 10px;">
-            <img src="../media/png/KE_Screenshot2.png" alt="Kill.exe Screenshot 2"
-                style="max-width: 300px; border: 2px solid var(--accent-green); border-radius: 10px;">
-            <img src="../media/png/KE_Screenshot3.png" alt="Kill.exe Screenshot 3"
-                style="max-width: 620px; border: 2px solid var(--accent-green); border-radius: 10px;">
+            <div class="cta-band reveal">
+                <h2 data-es="Juega a Kill.exe">Play Kill.exe</h2>
+                <p data-es="Disponible ahora en Itch.io — desarrollado por Logstorm Games.">Available now on Itch.io —
+                    developed by Logstorm Games.</p>
+                <div class="doc-actions">
+                    <a href="https://logstormgames.itch.io/killexe" target="_blank" rel="noopener"
+                        class="btn btn-primary" data-es="Jugar en Itch.io">Play on Itch.io</a>
+                    <a href="https://logstorm.es" target="_blank" rel="noopener" class="btn btn-ghost"
+                        data-es="Visita Logstorm Games">Visit Logstorm Games</a>
+                </div>
+            </div>
+
         </div>
+    </main>
 
-        <h2>Download / Play</h2>
-        <p>
-            🎮 <a href="https://logstormgames.itch.io/killexe" target="_blank"
-                style="color: var(--accent-green); font-weight: bold;">Play Kill.exe on Itch.io →</a>
-        </p>
-
-        <p>
-            🔗 Developed by <a href="https://logstorm.es" target="_blank"
-                style="color: var(--accent-green); font-weight: bold;">Logstorm Games</a>
-        </p>
-    </section>
-
-    <footer>
-        &copy; 2025 Pol Gomez. All rights reserved.
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="prompt">&gt;_</span> Pol Gomez</a>
+            <span class="footer-meta" data-es="© 2025 Pol Gomez — todos los derechos reservados">© 2025 Pol Gomez — all rights reserved</span>
+        </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
